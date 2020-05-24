@@ -1,0 +1,936 @@
+//Home
+.vid-container {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:0;
+}
+
+video {
+	display:block;
+	min-width:100%;
+	min-height:100%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index:1;
+}
+
+body {
+	position:fixed;
+	overflow-y:scroll;
+	width:100%;
+	height:100%;
+}
+
+#overlay {
+	position:absolute;
+	z-index:3000;
+}
+
+.header {
+	position:relative;
+	text-align:center;
+	font-family: Helvetica;
+	color: #FFFFFF;
+}
+
+.textstyle {
+	margin-left:300px;
+	margin-right:300px;
+	margin-bottom:auto;
+}
+
+h1 {
+	margin-top:300px;
+	font-size:32px;
+	font-weight:2px;
+}
+
+h6 {
+	margin-bottom:200px;
+	font-size:18px;
+}
+
+.quotebox {
+	position:relative;
+	font-family: Times New Roman;
+	color: #FFFFFF;
+	float:right;
+	font-size:18px;
+	font-weight:1px;
+	height:300px;
+	width:300px;
+
+}
+
+.menu {
+	position:relative;
+	top:50px;
+	left:50px;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:1px;
+	height:100px;
+	width:500px;
+}
+
+ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	min-width:100%;
+}
+
+li{
+	display:inline;
+	width:700px;
+}
+
+li strong {
+	color:blue;
+}
+
+li a {
+	padding: 14px 16px;
+	text-decoration: none;
+	color:white;
+}
+
+ul li a:hover {
+	color:blue !important;
+}
+
+.expandSearch{
+  display: block;
+  position: relative;
+  float:right;
+  top:50px;
+  right:0;
+  overflow: hidden;
+}
+.expandSearch i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 4px 8px 8px ;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.24s;
+}
+.expandSearch i:hover{
+  color: #0bf;
+}
+.expandSearch input{
+  border:none;
+  background: transparent;
+  font:14px/1.4 sans-serif;
+  padding-left: 26px;
+  background:#fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: 0.24s;
+  width: 0px;
+  padding: 8px 0px 8px 34px;
+}
+.expandSearch input:focus{
+  border-color: #aaa;
+  outline: none;
+  width:200px;
+  padding: 8px 12px 8px 34px;
+  border-color: #0bf;
+}
+.expandSearch input:focus + i{
+  /*padding: 8px 4px 8px 8px ;*/
+  color: #ddd;
+  pointer-events: none;
+}
+
+
+//relative is container for absolute!
+//if something is NOT showing up, make position: relative!!!  (its OWN container)
+
+//About
+#about {
+
+}
+
+.about_p {
+	position: relative;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	top:-1em;
+}
+
+.anim {
+  position: absolute;
+  height: 100%;
+  width: calc(100% + 100px);
+  background-image: url(https://content.thriveglobal.com/wp-content/uploads/2019/04/mind-consciouness-neurosciencenews.jpg);
+  animation: zoom-move 15s linear infinite;
+}
+
+@keyframes zoom-move {
+  0% {
+    transform: scale(1) translateX(-100px);
+    opacity: 0.25;
+  }
+  13.33% {
+    opacity: 1;
+    /* make opacity change complete in 2s */
+  }
+  66.66% {
+    transform: scale(1.13) translateX(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2) translateX(0px);
+    opacity: 1;
+  }
+}
+
+.about_style {
+	background-color:black;
+	text-align: center;
+	color:white;
+	-webkit-animation: fadein 4s;
+	animation-iteration-count:1;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}
+
+.about_style p {
+	position:relative;
+	font-size:18px;
+	display:block;
+	margin-left:300px;
+	margin-right:300px;
+	background-color:rgba(0,0,0,.60)   /*50% opacity*/
+}
+
+.circle {
+	position:relative;
+	top:75px;
+    left:75px;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:white;
+	color:red;
+}
+
+.text{
+    position:absolute;
+    font-size:5px;
+    width:75%;
+    height:100%;
+    left:13%;
+    top:30%;
+}
+
+.circle:hover {
+	transition-delay:50ms;
+	transform: scale(3.5);
+}
+
+.circle2 {
+	position:relative;
+	top:300px;
+    left:20%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:white;
+	color:red;
+}
+
+.text2 {
+	position:absolute;
+    font-size:5px;
+    width:75%;
+    height:100%;
+    left:13%;
+    top:20%;
+}
+
+.circle2:hover {
+	transition-delay:50ms;
+	transform: scale(3.5);
+}
+
+.circle3 {
+	position:relative;
+	top:150px;
+    left:55%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:white;
+	color:red;
+}
+
+.text3 {
+	position:absolute;
+    font-size:5px;
+    width:75%;
+    height:100%;
+    left:13%;
+    top:22%;
+}
+
+.circle3:hover {
+	transition-delay:50ms;
+	transform: scale(3.5);
+}
+
+.circle4 {
+	position:relative;
+	top:60px;
+    left:70%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:white;
+	color:red;
+}
+
+.text4 {
+	position:absolute;
+    font-size:5px;
+    width:75%;
+    height:100%;
+    left:13%;
+    top:17%;
+}
+
+.circle4:hover {
+	transition-delay:50ms;
+	transform: scale(3.5);
+}
+
+.circle5 {
+	position:relative;
+	top:300px;
+    left:85%;
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	background-color:white;
+	color:red;
+}
+
+.text5 {
+	position:absolute;
+    font-size:5px;
+    width:75%;
+    height:100%;
+    left:13%;
+    top:18%;
+}
+
+.circle5:hover {
+	transition-delay:50ms;
+	transform: scale(3.5);
+}
+
+
+//Research
+#research {
+
+}
+
+.research_style {
+	background:black;
+	text-align: center;
+	color:white;
+	-webkit-animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}
+
+.res1 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:10%;
+}
+
+.res1 span {
+	display:none;
+}
+
+.res1:hover {
+	color:red;
+}
+
+.res1:hover span {
+	display:block;
+	position:fixed;
+	bottom:135px;
+	left:5%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:150px;
+}
+
+.res2 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:20%;
+}
+
+.res2 span {
+	display:none;
+}
+
+.res2:hover {
+	color:red;
+}
+
+.res2:hover span {
+	display:block;
+	position:fixed;
+	top:100px;
+	left:15%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:125px;
+}
+
+.res3 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:30%;
+}
+
+.res3 span {
+	display:none;
+}
+
+.res3:hover {
+	color:red;
+}
+
+.res3:hover span {
+	display:block;
+	position:fixed;
+	bottom:135px;
+	left:25%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:150px;
+}
+
+.res4 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:40%;
+}
+
+.res4 span {
+	display:none;
+}
+
+.res4:hover {
+	color:red;
+}
+
+.res4:hover span {
+	display:block;
+	position:fixed;
+	top:100px;
+	left:35%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:150px;
+}
+
+.res5 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:50%;
+}
+
+.res5 span {
+	display:none;
+}
+
+.res5:hover {
+	color:red;
+}
+
+.res5:hover span {
+	display:block;
+	position:fixed;
+	bottom:135px;
+	left:45%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:210px;
+	height:180px;
+}
+
+.res6 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:60%;
+}
+
+.res6 span {
+	display:none;
+}
+
+.res6:hover {
+	color:red;
+}
+
+.res6:hover span {
+	display:block;
+	position:fixed;
+	top:100px;
+	left:55%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:180px;
+}
+
+.res7 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:70%;
+}
+
+.res7 span {
+	display:none;
+}
+
+.res7:hover {
+	color:red;
+}
+
+.res7:hover span {
+	display:block;
+	position:fixed;
+	bottom:135px;
+	left:65%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:210px;
+}
+
+.res8 {
+	display:block;
+	position:absolute;
+	font-size:72px;
+	text-decoration:none;
+	width:50px;
+	color:white;
+	top:300px;
+	left:80%;
+}
+
+.res8 span {
+	display:none;
+}
+
+.res8:hover {
+	color:red;
+}
+
+.res8:hover span {
+	display:block;
+	position:fixed;
+	top:100px;
+	left:75%;
+	color:white;
+	font-size:24px;
+	background:grey;
+	width:200px;
+	height:210px;
+}
+
+//Theories
+#theories {
+
+}
+
+.theories_page {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5em;
+}
+
+.theories_style {
+	background:black;
+	text-align: center;
+	color:white;
+	-webkit-animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}
+
+.center_img {
+	position:absolute;
+	top:200px;
+	left:400px;
+}
+
+.center_img img {
+	border-radius:50%;
+}
+
+.the1 {
+	position:absolute;
+	top:50px;
+	left:50px;
+}
+
+.the1 p {
+	width:300px;
+	height:300px;
+	text-align:justify;
+}
+
+.the2 {
+	position:absolute;
+	top:50px;
+	right:75px;
+}
+
+.the2 p {
+	width:300px;
+	height:300px;
+	text-align:justify;
+}
+
+.the3 {
+	position:absolute;
+	bottom:50px;
+	right:75px;
+}
+
+.the3 p {
+	width:300px;
+	height:200px;
+	text-align:justify;
+}
+
+.the4 {
+	position:absolute;
+	bottom:50px;
+	left:50px;
+}
+
+.the4 p {
+	width:300px;
+	height:200px;
+	text-align:justify;
+}
+
+//Technologies
+#technologies {
+
+}
+
+.tech_page {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5em;
+}
+
+.tech_style {
+	background:black;
+	text-align: center;
+	color:white;
+	-webkit-animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}
+
+.tech_style p {
+	font-size:18px;
+	display:block;
+	margin-left:300px;
+	margin-right:300px;
+}
+
+.container-div {
+display:flex;
+width:50%;
+margin:auto;
+margin-left:175px;
+justify-content:space-between;
+}
+
+#tdiv1 {
+position:relative;
+left:10px;
+top:50px;
+}
+
+#tdiv1 img {
+position:absolute;
+left:0;
+}
+
+#tdiv1 img.top {
+animation-name: techFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 10s;
+animation-direction: alternate;
+}
+
+#tdiv2 {
+position:relative;
+top:50px;
+left:10px;
+}
+
+#tdiv2 img {
+position:absolute;
+left:0;
+}
+
+#tdiv2 img.top {
+animation-name: techFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 4s;
+animation-direction: alternate;
+}
+
+#tdiv3 {
+position:relative;
+top:50px;
+left:10px;
+}
+
+#tdiv3 img {
+position:absolute;
+left:0;
+}
+
+#tdiv3 img.top {
+animation-name: techFadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 7s;
+animation-direction: alternate;	
+}
+
+@keyframes techFadeInOut {
+  0% {
+    opacity:1;
+  }
+  45% {
+    opacity:1;
+  }
+  55% {
+    opacity:0;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+.bluebox {
+	position:absolute;
+	height:400px;
+	width:600px;
+	left:130px;
+	top:400px;
+	background:blue;
+	opacity:0.60;
+	z-index:-3;
+}
+
+.pinkbox {
+	position:absolute;
+	height:325px;
+	width:600px;
+	right:150px;
+	top:375px;
+	background:pink;
+	opacity:0.60;
+	z-index:-1;
+}
+
+.lefttext {
+	position:absolute;
+	left:50px;
+	top:420px;
+}
+
+.lefttext p {
+	height:400px;
+	width:400px;
+}
+
+.righttext {
+	position:absolute;
+	right:170px;
+	top:395px;
+}
+
+.righttext p {
+	height:400px;
+	width:300px;
+}
+
+//Updates
+#updates {
+
+}
+
+
+.update_page {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:5em;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://motherboard-images.vice.com/content-images/contentimage/29645/1452883187392519.gif);
+  background-repeat:no-repeat;
+}
+
+.update_style {
+	background:black;
+	text-align: center;
+	color:white;
+	-webkit-animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to 	 {opacity: 1;}
+}
+
+.update_style p {
+	font-size:18px;
+	display:block;
+	margin-left:300px;
+	margin-right:300px;
+}
+
+.side_menu {
+	position:absolute;
+	right:50px;
+}
+
+.upd1:before {
+	visibility:hidden;
+}
+
+.upd1 {
+animation-duration:2s;
+animation-name:slidein;
+}
+
+.upd2:before {
+	visibility:hidden;
+}
+
+.upd2 {
+animation-duration:2s;
+animation-name:slidein;
+animation-delay:2s;
+}
+
+.upd3:before {
+	visibility:hidden;
+}
+
+.upd3 {
+animation-duration:2s;
+animation-name:slidein;
+animation-delay:4s;
+}
+
+@keyframes slidein {
+	from {
+		margin-left:100%;
+		width:300%;
+		opacity:1;
+	}
+
+	to {
+		margin-left:0%;
+		width:100%;
+		opacity:1;
+	}
+}
+
+
+
